@@ -1,0 +1,17 @@
+.cloud {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: moveCloud 10s linear infinite;
+  z-index: 1;
+}
+.cloud-0 { animation-duration: 30s; opacity: 0.9; }
+.cloud-1 { animation-duration: 45s; opacity: 0.75; }
+.cloud-2 { animation-duration: 60s; opacity: 0.6; }
+
+@keyframes moveCloud {
+  0% { left: 100vw; transform: translateX(0); }
+  100% { left: -150px; transform: translateX(0); }
+}
